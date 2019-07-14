@@ -17,22 +17,7 @@ public class Actor {
         this.age = age;
     }
 
-
-
-
-    //setters for dependency injection
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
+    //getters for data members
     public String getName() {
         return name;
     }
@@ -44,7 +29,6 @@ public class Actor {
     public int getAge() {
         return age;
     }
-
     @Override
     public String toString() {
         return "Actor{" +

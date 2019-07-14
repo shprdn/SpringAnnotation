@@ -11,13 +11,11 @@ public class MainDemo
     public static void main(String[] args) {
 
         System.out.println("///////////////Using ApplicationContext/////////////");
+        //ApplicationContext with Annotation
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Movie movie2 = context.getBean(Movie.class);
-        movie2.display();
-        System.out.println("///////////////Using BeanFactory/////////////");
-        BeanFactory bean = new AnnotationConfigApplicationContext(AppConfig.class);
-        Movie movie1 = bean.getBean(Movie.class);
-        movie1.display();
+        Movie movie = context.getBean(Movie.class);
+        movie.display();
+
 
     }
 }
