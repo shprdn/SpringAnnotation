@@ -39,6 +39,12 @@ public class AppConfig {
         return m;
     }
 
+    @Bean
+    public BeanLifecycleDemoBean beanLifecycleDemoBean()
+    {
+        return new BeanLifecycleDemoBean();
+    }
+
 
 
 }
