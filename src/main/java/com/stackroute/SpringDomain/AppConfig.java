@@ -38,7 +38,7 @@ public class AppConfig {
         Movie m = new Movie(actor1(),actor2(),actor3());
         return m;
     }
-
+    //creating bean for BeanLifeCycleDemoBean class
     @Bean
     public BeanLifecycleDemoBean beanLifecycleDemoBean()
     {

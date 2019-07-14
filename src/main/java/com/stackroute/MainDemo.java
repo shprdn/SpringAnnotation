@@ -15,9 +15,9 @@ public class MainDemo
         System.out.println("///////////////Using ApplicationContext/////////////");
         //ApplicationContext with Annotation
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-
+        //BeanLifeCycleDemoBean object creation
         BeanLifecycleDemoBean beanLifecycleDemoBean = context.getBean(BeanLifecycleDemoBean.class);
-
+        //closing down the context of ApplicationContext
         ((AbstractApplicationContext)context).registerShutdownHook();
 
 
