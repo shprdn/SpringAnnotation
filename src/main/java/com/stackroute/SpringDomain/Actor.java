@@ -29,6 +29,7 @@ public class Actor {
     public int getAge() {
         return age;
     }
+
     @Override
     public String toString() {
         return "Actor{" +
@@ -37,4 +38,5 @@ public class Actor {
                 ", age=" + age +
                 '}';
     }
+
 }
