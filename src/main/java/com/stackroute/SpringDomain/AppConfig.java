@@ -13,22 +13,22 @@ public class AppConfig {
     @Bean
     public Actor actor1()
     {
-        Actor actor1 = new Actor("ShahRukh Khan","Male",53);
-        return actor1;
+        Actor actor = new Actor("ShahRukh Khan","Male",53);
+        return actor;
     }
     //creating actor bean for actor2
     @Bean
     public Actor actor2()
     {
-        Actor actor2 = new Actor("Kartik Aaryan","Male",28);
-        return actor2;
+        Actor actor = new Actor("Kartik Aaryan","Male",28);
+        return actor;
     }
     //creating actor bean for actor3
     @Bean
     public Actor actor3()
     {
-        Actor actor3 = new Actor("Deepika Padukone","Female",32);
-        return actor3;
+        Actor actor = new Actor("Deepika Padukone","Female",32);
+        return actor;
     }
 
     //specifying the scope as prototype
@@ -38,19 +38,7 @@ public class AppConfig {
         Movie m = new Movie(actor1(),actor2(),actor3());
         return m;
     }
-    //creating another bean for comparison
-    @Bean
-    public Movie movie1(){
-        Movie m = new Movie(actor1(),actor2(),actor3());
-        return m;
-    }
 
-    @Bean(name = {"movieA", "movieB"})
-    public Movie movieA()
-    {
-        Movie m = new Movie(actor1(),actor2(),actor3());
-        return m;
-    }
 
 
 }

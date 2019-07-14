@@ -7,6 +7,8 @@ public class Movie {
     private Actor actor2;
     private Actor actor3;
 
+    //constructor DI
+    @Autowired
     public Movie(Actor actor1, Actor actor2, Actor actor3) {
         this.actor1 = actor1;
         this.actor2 = actor2;

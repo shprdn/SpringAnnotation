@@ -11,6 +11,7 @@ public class Actor {
     public Actor() {
     }
 
+    //Constructor DI
     public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
