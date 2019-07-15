@@ -16,7 +16,7 @@ public class Movie implements ApplicationContextAware,BeanNameAware,BeanFactoryA
     private BeanFactoryAware bean;
 
     //constructor DI
-    @Autowired
+
     public Movie(Actor actor1, Actor actor2, Actor actor3) {
         this.actor1 = actor1;
         this.actor2 = actor2;

@@ -1,5 +1,6 @@
 package com.stackroute.SpringDomain;
 
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -43,6 +44,12 @@ public class AppConfig {
     public BeanLifecycleDemoBean beanLifecycleDemoBean()
     {
         return new BeanLifecycleDemoBean();
+    }
+    @Bean
+    //creating bean for BeanPostProcessorDemoBean class
+    public BeanPostProcessorDemoBean beanPostProcessor()
+    {
+        return new BeanPostProcessorDemoBean();
     }
 
 
