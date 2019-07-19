@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppConfig {
-
+   //bean for actor 1
     @Bean
     public Actor actor1()
     {
@@ -16,6 +16,7 @@ public class AppConfig {
         actor1.setAge(53);
         return actor1;
     }
+     //bean for actor 2
     @Bean
     public Actor actor2()
     {
@@ -25,6 +26,7 @@ public class AppConfig {
         actor2.setAge(28);
         return actor2;
     }
+    // //bean for actor 3
     @Bean
     public Actor actor3()
     {
@@ -34,6 +36,8 @@ public class AppConfig {
         actor3.setAge(32);
         return actor3;
     }
+    //specifying the scope
+     //bean for movie 
     @Scope("prototype")
     @Bean
     public Movie movie(){
