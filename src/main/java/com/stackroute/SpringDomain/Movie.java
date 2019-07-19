@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Movie {
     private Actor actor1;
-    private Actor actor2;
+    private Actor actor2; 
     private Actor actor3;
     //constructor to call actors
     public Movie(Actor actor1, Actor actor2, Actor actor3) {
