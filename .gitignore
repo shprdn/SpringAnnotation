@@ -5,7 +5,7 @@
 /src/test/javascript/coverage/
 /src/test/javascript/PhantomJS*/
 ######################
-# Node
+# Node 
 ######################
 /node/
 node_tmp/
