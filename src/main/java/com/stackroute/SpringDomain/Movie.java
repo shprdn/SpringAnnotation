@@ -19,7 +19,7 @@ public class Movie {
     public void setActor3(Actor actor3) {
         this.actor3 = actor3;
     }
-
+    //displaying the actor members
     public void display()
     {
         System.out.println("Name is---"+actor1.getName()+"\n"+"Gender is---"+actor1.getGender()+"\n"+"Age is---"+actor1.getAge());
