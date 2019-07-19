@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class AppConfig {
    //bean for actor 1
-    @Bean
+    @Bean 
     public Actor actor1()
     {
         Actor actor1 = new Actor();
